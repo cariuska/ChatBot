@@ -14,4 +14,4 @@ RUN [ "npm", "install" ]
 
 #ENTRYPOINT ["./bin/hubot --adapter slack"] 
 
-ENTRYPOINT ["sh chatbot.sh --adapter slack"] 
+ENTRYPOINT ["chatbot.sh --adapter slack"] 
