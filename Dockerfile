@@ -12,4 +12,6 @@ RUN npm install -g generator-hubot
 ADD . /usr/src/app
 RUN [ "npm", "install" ]
 
-ENTRYPOINT ["./bin/hubot --adapter slack"]
+#ENTRYPOINT ["./bin/hubot --adapter slack"]
+
+CMD sh chatbot.sh --adapter slack
